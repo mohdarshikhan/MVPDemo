@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--margin or padding-->
+    <dimen name="very_small">2dp</dimen>
+    <dimen name="extra_small">5dp</dimen>
+    <dimen name="small">10dp</dimen>
+    <dimen name="medium">15dp</dimen>
+    <dimen name="large">20dp</dimen>
+
+    <!--Text size-->
+    <dimen name="text_very_small">10sp</dimen>
+    <dimen name="text_extra_small">12sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_normal">16sp</dimen>
+    <dimen name="text_medium">18sp</dimen>
+
+
+    <dimen name="content_inset_end">12dp</dimen>
+    <dimen name="content_inset_start">8dp</dimen>
+    <dimen name="elevation">1dp</dimen>
+    <dimen name="image_size">60dp</dimen>
+
+    <dimen name="action_bar_height">56dp</dimen>
+    <dimen name="edit_text_min_height">@dimen/action_bar_height</dimen>
+    <dimen name="divider_height">1dp</dimen>
+
+</resources>

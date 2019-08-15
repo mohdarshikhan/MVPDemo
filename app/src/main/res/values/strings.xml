@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MVPDemo</string>
+    <string name="lbl_ok">OK</string>
+
+    <string name="error_server_unavailable">Server temporary unavailable</string>
+    <string name="error_internal_server_error">Internal Server Error</string>
+    <string name="error_internet_not_working">May be internet not working. Please check your internet.</string>
+    <string name="empty_list_message">No Records found</string>
+    <string name="lbl_search">Search</string>
+    <string name="timestamp_format_image_file">yyyyMMdd_HHmmss</string>
+    <string name="title_books">Books</string>
+
+    <plurals name="books_count">
+        <item quantity="one">%1$s book</item>
+        <item quantity="other">%1$s books</item>
+    </plurals>
+
+</resources>

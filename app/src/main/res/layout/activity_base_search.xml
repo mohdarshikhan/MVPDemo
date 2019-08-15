@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/DefaultLayout"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/heading"
+        style="@style/HeadingText"
+        android:layout_below="@id/toolbar"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/search_root"
+        style="@style/MatchWrap"
+        android:layout_below="@id/heading"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_search"
+            style="@style/SearchEditText"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:hint="@string/lbl_search"
+            android:imeOptions="actionDone"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/tv_total"
+            style="@style/AllWrap"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:textColor="@color/textColorTertiary" />
+
+        <View
+            style="@style/MatchWrap"
+            android:layout_height="@dimen/divider_height"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@color/dividerColor" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/rv_common"
+        layout="@layout/item_empty_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_root"
+        android:padding="@dimen/activity_horizontal_margin" />
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <FrameLayout
+        android:id="@+id/image_root"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:contentDescription="@string/app_name" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/AllWrap"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:layout_marginLeft="@dimen/large"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/heading"
+            style="@style/TextPrimary"
+            android:textColor="@color/textColorPrimary" />
+
+        <TextView
+            android:id="@+id/sub_heading"
+            style="@style/AllWrap"
+            android:textColor="@color/syncCounterTextColor"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

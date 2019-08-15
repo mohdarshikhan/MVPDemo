@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/progressBar"
+    style="@style/AllWrap"
+    android:theme="@style/ProgressBarAccent"
+    android:drawingCacheQuality="high"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true" />
