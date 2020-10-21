@@ -1,5 +1,6 @@
 package com.mak.app.mvpdemo.dagger;
 
+import com.mak.app.mvpdemo.book.BookDetailActivity;
 import com.mak.app.mvpdemo.book.BooksActivity;
 import com.mak.app.mvpdemo.common.BaseApplication;
 
@@ -19,5 +20,7 @@ public interface AppComponents {
     void inject(BaseApplication baseApplication);
 
     void inject(BooksActivity booksActivity);
+
+    void inject(BookDetailActivity bookDetailActivity);
 
 }

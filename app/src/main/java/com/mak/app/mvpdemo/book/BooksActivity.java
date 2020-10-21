@@ -1,10 +1,13 @@
 package com.mak.app.mvpdemo.book;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
 import com.mak.app.mvpdemo.R;
 import com.mak.app.mvpdemo.apicalls.APIConstants;
+import com.mak.app.mvpdemo.apicalls.APIServices;
 import com.mak.app.mvpdemo.apicalls.commonmodels.ImageLinks;
 import com.mak.app.mvpdemo.apicalls.commonmodels.Item;
 import com.mak.app.mvpdemo.apicalls.commonmodels.VolumeInfo;
@@ -19,6 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 
 /**
  * <p>
@@ -29,6 +33,9 @@ public class BooksActivity extends BaseSearchActivity implements BooksMvpView,
         BaseSearchActivity.ActionMenuClickListener {
 
     private List<Item> mBooks = new ArrayList<>();
+
+    @Inject
+    public Gson mGson;
 
     @Inject
     BooksPresenter mFarmersPresenter;
@@ -99,7 +106,10 @@ public class BooksActivity extends BaseSearchActivity implements BooksMvpView,
 
     @Override
     public void onItemClick(int position, CommonModel model) {
-
+        Intent intent = new Intent(this, BookDetailActivity.class);
+        String bookJson = mGson.toJson(model);
+        intent.putExtra("bookJson", bookJson);
+        startActivity(intent);
     }
 
     @Override
